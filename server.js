@@ -56,8 +56,6 @@ server.put('/:id', async(req, res) => {
 });
 
 server.delete('/:id', async(req, res) => {
-        try {
-              const count = await server.delete('/:id', async(req, res) => {
               try {
               const count = await accountsModel.remove(req.params.id);
               if (count > 0) {
